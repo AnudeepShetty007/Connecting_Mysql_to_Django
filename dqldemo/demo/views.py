@@ -3,6 +3,11 @@ from django.shortcuts import render
 from .models import Dest
 
 def index(request):
+    
+    data1=json.load(open("e:/data.json"))
+    
+    # de= Dest.objects.all()
+    return render(request,"index.html", {'data1':data1})
     de= Dest.objects.all()
     return render(request,"index.html", {'de':de})
 

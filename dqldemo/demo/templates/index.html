@@ -13,6 +13,10 @@
 
     <tbody>
     {% for i in de %}
+     
+     {% for key, value in data1.items %}  #to display json data
+    {{ key }}: {{ value }}
+{% endfor %}
         <tr>
             
             <td> {{i.name}} </td>

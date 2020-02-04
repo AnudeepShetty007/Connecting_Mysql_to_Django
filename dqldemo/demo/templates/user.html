@@ -1,0 +1,26 @@
+
+<head>
+
+</head>
+    <body>    
+    
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <label for="name">Name</label><br/>
+        <input type="text" name="name" id="update_name" placeholder="Enter A Name" required /><br/>
+        <label for="price">Price</label><br/>
+        <input type="number" min="1" name="price" id="update_name" placeholder="Enter A Price" required/><br/>
+        <label for="desc">Desc</label><br/>
+        <input type="text" name="desc" id="update_name" placeholder="Enter A desc" required/>
+<br />
+        <input type="submit" value="Post"/>
+</form>
+
+
+        
+    </body>
+
+
+

@@ -1,0 +1,34 @@
+
+<body>
+<head>
+ 
+
+    <h1> 
+    <table style='color:black;width:100%'>
+
+
+<th>Name</th>
+<th>Price</th>
+<th>Desc</th>
+
+    <tbody>
+    {% for i in de %}
+        <tr>
+            
+            <td> {{i.name}} </td>
+            <td>    {{i.price}} </td>
+            <td>    {{i.desc}} </td>  
+            
+        </tr>
+        {% endfor %}
+        </tbody>
+</table>
+
+            <div class="container text-center" style="color:white">
+               <b style='color:yellow'>Welcome to PrintCosmos</b>
+               </div>
+            </h1>
+           
+</head>
+</body>
+</html>
